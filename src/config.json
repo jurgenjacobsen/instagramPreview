@@ -1,0 +1,15 @@
+{
+	"username": "john.due",
+	"displayName": "John Doe",
+	"photo": "profile.jpg",
+	"bio": "🌟 | Dreamer with a wild imagination\n 🌙 | Exploring the world one adventure at a time\n 🌎 | Coffee lover \n☕ | Capturing moments through my lens \n📷 | Spreading positivity and good vibes",
+	"website": "https://www.linkedin.com/in/jurgen-jacobsen-2b1b0a1a/",
+	"followers": 1542,
+	"following": 639,
+	"highlights": [
+		{ "photo": "ProjectEng.png", "title": "Example 1" },
+		{ "photo": "ProjectEng.png", "title": "Example 2" },
+		{ "photo": "ProjectEng.png", "title": "Example 3" }
+	],
+	"posts": [{ "photo": "ProjectEng.png" }, { "photo": "ProjectEng.png" }]
+}

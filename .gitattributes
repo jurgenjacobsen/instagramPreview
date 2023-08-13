@@ -1,4 +1,3 @@
 /*.js linguist-language=Typescript
-backend/*.js linguist-language=Typescript
 
 index.html linguist-language=Vue

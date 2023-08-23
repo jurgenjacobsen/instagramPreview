@@ -9,8 +9,7 @@
 		data() {
 			return {
 				data: config,
-				profileHeaderData:
-					JSON.parse(localStorage.getItem("data") || "{}") || config,
+				profileHeaderData: config,
 				saved: false,
 			};
 		},

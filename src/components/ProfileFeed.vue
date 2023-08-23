@@ -100,9 +100,9 @@
 	</div>
 
 	<!-- FEED -->
-	<div class="feed mt-2 grid grid-cols-3 gap-1">
+	<div class="feed mt-2 grid grid-cols-3 gap-1 pb-6">
 		<div class="aspect-[1/1]" v-for="post in data.posts">
-			<img :src="'/feed/' + post.photo" class="w-full h-full object-cover" />
+			<img loading="eager" :src="'/feed/' + post.photo" class="w-full h-full object-cover" :title="post.photo"/>
 		</div>
 	</div>
 </template>

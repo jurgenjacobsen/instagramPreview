@@ -368,7 +368,7 @@
 						v-if="posts.length > 0"
 					>
 						<img
-							:src="settings.feedPhotosPrefix + post"
+							:src="(!post.startsWith('http') ? settings.feedPhotosPrefix : '') + post"
 							:key="idx"
 							class="w-full h-full object-cover"
 							v-if="post.length! > 0"

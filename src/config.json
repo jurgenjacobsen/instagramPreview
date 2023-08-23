@@ -1,15 +1,74 @@
 {
 	"username": "john.due",
 	"displayName": "John Doe",
-	"photo": "profile.jpg",
+	"photo": "20230630_204014.jpg",
 	"bio": "🌟 | Dreamer with a wild imagination\n 🌙 | Exploring the world one adventure at a time\n 🌎 | Coffee lover \n☕ | Capturing moments through my lens \n📷 | Spreading positivity and good vibes",
 	"website": "https://www.linkedin.com/in/jurgen-jacobsen-2b1b0a1a/",
 	"followers": 1542,
 	"following": 639,
 	"highlights": [
-		{ "photo": "ProjectEng.png", "title": "Example 1" },
-		{ "photo": "ProjectEng.png", "title": "Example 2" },
-		{ "photo": "ProjectEng.png", "title": "Example 3" }
+		{ "photo": "ProjectEng.jpg", "title": "ㅤ" }
 	],
-	"posts": [{ "photo": "ProjectEng.png" }, { "photo": "ProjectEng.png" }]
+	"posts": [
+		{ "photo": "IMG_5113.jpg" },
+		{ "photo": "IMG_5002.jpg" },
+		{ "photo": "IMG_5748.jpg" },
+
+		{ "photo": "IMG_5761.jpg" },
+		{ "photo": "IMG_5185.jpg" },
+		{ "photo": "IMG_9072.jpg" },
+
+		{ "photo": "IMG_5800.jpg" },
+		{ "photo": "IMG_5127.jpg" },
+		{ "photo": "IMG_5525.jpg" },
+		
+		{ "photo": "IMG_4270.jpg" },
+		{ "photo": "IMG_4367.jpg" },
+		{ "photo": "IMG_4376.jpg" },
+
+		{ "photo": "IMG_4122.jpg" },
+		{ "photo": "IMG_4071.jpg" },
+		{ "photo": "IMG_4139.jpg" },
+		
+		{ "photo": "IMG_8789.jpg" },
+		{ "photo": "IMG_8977.jpg" },
+		{ "photo": "IMG_8785.jpg" },
+
+		{ "photo": "IMG_2469.jpg" },
+		{ "photo": "IMG_2478.jpg" },
+		{ "photo": "IMG_2483.jpg" },
+	
+		{ "photo": "IMG_1226.jpg" },
+		{ "photo": "IMG_1520.jpg" },
+		{ "photo": "IMG_1231.jpg" },
+
+		{ "photo": "IMG_1508.jpg" },
+		{ "photo": "IMG_4570.jpg" },
+		{ "photo": "IMG_1730.jpg" },
+
+		{ "photo": "IMG_5272.jpg" },
+		{ "photo": "IMG_1229.jpg" },
+		{ "photo": "IMG_5289.jpg" },
+
+		{ "photo": "IMG_2753.jpg" },
+		{ "photo": "IMG_3935.jpg" },
+		{ "photo": "IMG_3127.jpg" },
+
+
+		{ "photo": "IMG_0938.jpg" },
+		{ "photo": "IMG_1220.jpg" },
+		{ "photo": "IMG_3331.jpg" },
+
+		{ "photo": "IMG_0901.jpg" },
+		{ "photo": "IMG_4278.jpg" },
+		{ "photo": "IMG_1195.jpg" },
+
+		{ "photo": "IMG_4963.jpg" },
+		{ "photo": "IMG_4677.jpg" },
+		{ "photo": "IMG_3929.jpg" },
+
+		{ "photo": "IMG_2788.jpg" },
+		{ "photo": "IMG_0607.jpg" },
+		{ "photo": "IMG_1059.jpg" }
+	]
 }

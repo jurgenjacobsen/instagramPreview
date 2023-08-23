@@ -50,7 +50,7 @@
 		<div>
 			<img
 				:src="'/photos/' + data.photo"
-				class="w-[128px] rounded-full ring-2 ring-neutral-400 dark:ring-neutral-600 ring-offset-4 ring-offset-white dark:ring-offset-black"
+				class="w-[128px] aspect-square object-cover rounded-full ring-2 ring-neutral-400 dark:ring-neutral-600 ring-offset-4 ring-offset-white dark:ring-offset-black"
 			/>
 		</div>
 		<div class="text-lg my-auto">

@@ -10,6 +10,11 @@ const router = createRouter({
 			name: "home",
 			component: HomeView,
 		},
+		{
+			path: "/carousels",
+			name: "carousels",
+			component: () => import("../views/Carousels.vue"),
+		}
 	],
 });
 

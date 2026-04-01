@@ -22,6 +22,15 @@
 			};
 		},
 		methods: {
+			convertNumbers(labelValue: number) {
+				// Nine Zeroes for Billions
+				return Math.abs(Number(labelValue)) >= 1.0e9
+					? (Math.abs(Number(labelValue)) / 1.0e9).toFixed(2) + "B"
+					: // Six Zeroes for Millions
+					Math.abs(Number(labelValue)) >= 1.0e6
+					? (Math.abs(Number(labelValue)) / 1.0e6).toFixed(2) + "M"
+					: Math.abs(Number(labelValue)).toLocaleString();
+			},
 			saveImage(refImg: string) {
 				const imageInput = this.$refs[refImg] as any;
 				const file = imageInput.files[0];
@@ -49,7 +58,7 @@
 				}
 			},
 			addPost() {
-				this.posts.push("");
+				this.posts.unshift("");
 				this.savePosts();
 			},
 			removePost(index: number) {
@@ -95,17 +104,13 @@
 				// @ts-ignore
 				if (imageData) this[image] = imageData;
 			}
-
-			setInterval(() => {
-				console.log(this.posts);
-			}, 5000);
 		},
 	};
 </script>
 
 <template>
 	<main class="grid xl:grid-cols-3 p-6 gap-4">
-		<div class="ring-1 rounded ring-neutral-500 bg-neutral-800 p-4 space-y-2">
+		<div class="ring-1 rounded ring-neutral-500 bg-neutral-800 p-4 space-y-2 hidden 2xl:block">
 			<form
 				@submit.prevent="saveImage('profileIcon')"
 				class="p-4 rounded bg-neutral-700"
@@ -256,7 +261,7 @@
 					<p>Posts</p>
 				</div>
 				<div class="text-lg my-auto">
-					<span class="font-semibold">{{ followers }}</span>
+					<span class="font-semibold">{{ convertNumbers(Number(followers)) }}</span>
 					<p>Followers</p>
 				</div>
 				<div class="text-lg my-auto">
@@ -267,7 +272,7 @@
 
 			<div class="px-6 py-2">
 				<h1 class="text-2xl font-semibold">{{ displayName }}</h1>
-				<p class="text-sm" v-html="bio"></p>
+				<p class="text-sm" v-html="bio.replace(/@([a-zA-Z0-9_.]+)/g, `<a class='text-blue-200 cursor-pointer' target='_blank' href='https://instagram.com/$1'>$&</a>`)"></p>
 			</div>
 
 			<div class="px-4 pt-4">
@@ -368,7 +373,10 @@
 						v-if="posts.length > 0"
 					>
 						<img
-							:src="settings.feedPhotosPrefix + post"
+							:src="
+								(!post.startsWith('http') ? settings.feedPhotosPrefix : '') +
+								post
+							"
 							:key="idx"
 							class="w-full h-full object-cover"
 							v-if="post.length! > 0"
